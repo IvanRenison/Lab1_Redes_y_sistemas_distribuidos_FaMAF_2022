@@ -12,7 +12,6 @@ Primer cuatrimestre, FAMAF.
 
 **Documentación**
 
-* [consigna.md](consigna.md) > Archivo con la consigna y puntos estrellas
 * [informe.md](informe.md) > Archivo del informe del laboratorio
 
 **Código**

@@ -26,10 +26,12 @@ ASCII es un código en el cuál se representa cada carácter con un byte, en ASC
 
 En Python 2 tenemos objetos **"str"** que guarda texto plano como un stream de bytes (ASCII), y los objetos **"unicode"** los cuales guardan código Unicode, estos últimos se indican utilizando `u""`, y colocando el mensaje dentro de las comillas, y usando `\u` se puede insertar cualquier código Unicode. En Python 2 la función Encode() se utiliza para convertir un objeto unicode a un stream de bytes, y la función Decode() para convertir un string de bytes a un objeto Unicode.
 
-Con la actualización a Python 3 se realizaron cambios, entre ellos manejar los strings con codificación Unicode, lo cual quiere decir Encode() se utiliza para convertir cualquier string a un stream de bytes.
+Con la actualización a Python 3 se decidio manejar los strings con codificación Unicode, lo cual quiere decir Encode() se utiliza para convertir cualquier string a un stream de bytes.
 
 ### Referencias
 
 https://nedbatchelder.com/text/unipain.html
+
+---
 
 **[README](README.md)**

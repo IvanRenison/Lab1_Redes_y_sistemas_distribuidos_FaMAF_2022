@@ -1,29 +1,29 @@
-# README #
+# Laboratorio N°1: Redes y sistemad distribuidos - 2022
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Primer cuatrimestre, FAMAF.
 
-### What is this repository for? ###
+---
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+**[INFORME](informe.md)**
 
-### How do I get set up? ###
+---
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+## Archivos
 
-### Contribution guidelines ###
+**Documentación**
 
-* Writing tests
-* Code review
-* Other guidelines
+* [consigna.md](consigna.md) > Archivo con la consigna y puntos estrellas
+* [informe.md](informe.md) > Archivo del informe del laboratorio
 
-### Who do I talk to? ###
+**Código**
 
-* Repo owner or admin
-* Other community or team contact
+* [hget.py](hget.py)
+
+**Estilo del código**
+
+* PEP8
+
+---
+
+**[INFORME](informe.md)**
+

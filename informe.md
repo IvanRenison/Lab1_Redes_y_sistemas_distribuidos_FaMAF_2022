@@ -38,6 +38,8 @@ En el código, la obtención de la dirección ip se hace llamando a la función 
 
 https://nedbatchelder.com/text/unipain.html
 
+[Nombre de dominio internacionalizado - Wikipedia, la enciclopedia libre](https://es.wikipedia.org/wiki/Nombre_de_dominio_internacionalizado)
+
 ---
 
 **[README](README.md)**

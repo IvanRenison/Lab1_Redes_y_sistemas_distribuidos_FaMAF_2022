@@ -24,9 +24,9 @@
 
 ASCII es un código en el cuál se representa cada carácter con un byte, en ASCII es posible representar 256 carácteres. Unicode es un código que asigna un número a cada carácter, tiene capacidad de codificar 1.1 millones de carácteres, es la codificación mas utilizada en la actualidad.
 
-En Python 2 tenemos objetos **"str"** que guarda texto plano como un stream de bytes (ASCII), y los objetos **"unicode"** los cuales guardan código Unicode, estos últimos se indican utilizando `u""`, y colocando el mensaje dentro de las comillas, y usando `\u` se puede insertar cualquier código Unicode. En Python 2 la función Encode() se utiliza para convertir un objeto unicode a un stream de bytes, y la función Decode() para convertir un string de bytes a un objeto Unicode.
+En Python 2 tenemos objetos **"str"** que guarda texto plano como un stream de bytes (ASCII), y los objetos **"unicode"** los cuales guardan código Unicode, estos últimos se indican utilizando `u""`, y colocando el mensaje dentro de las comillas, y usando `\u` se puede insertar cualquier código Unicode. En Python 2 la función `encode` se utiliza para convertir un objeto unicode a un stream de bytes, y la función `decode` para convertir un string de bytes a un objeto Unicode.
 
-Con la actualización a Python 3 se decidio manejar los strings con codificación Unicode, lo cual quiere decir Encode() se utiliza para convertir cualquier string a un stream de bytes.
+Con la actualización a Python 3 se decidió manejar los strings con codificación Unicode, lo cual quiere decir `encode` se utiliza para convertir cualquier string a un stream de bytes.
 
 ## DNS
 

@@ -22,23 +22,18 @@
 
 ## Encoding
 
-ASCII es un código en el cuál se representa cada carácter con un byte, en ASCII es posible representar 256 carácteres. Unicode es un código que asigna un número a cada carácter, tiene capacidad de codificar 1.1 millones de carácteres, es la codificación mas utilizada en la actualidad.
+ASCII es un código en el cuál se representa cada carácter con un byte, en ASCII es posible representar 128 carácteres. Unicode es un código que asigna un número a cada carácter, tiene capacidad de codificar 1.1 millones de carácteres, es la codificación mas utilizada en la actualidad.
 
-En Python 2 tenemos objetos **"str"** que guarda texto plano como un stream de bytes (ASCII), y los objetos **"unicode"** los cuales guardan código Unicode, estos últimos se indican utilizando `u""`, y colocando el mensaje dentro de las comillas, y usando `\u` se puede insertar cualquier código Unicode. En Python 2 la función `encode` se utiliza para convertir un objeto unicode a un stream de bytes, y la función `decode` para convertir un string de bytes a un objeto Unicode.
-
-Con la actualización a Python 3 se decidió manejar los strings con codificación Unicode, lo cual quiere decir `encode` se utiliza para convertir cualquier string a un stream de bytes.
-
-## DNS
-
-DNS es el protocolo para obtener la dirección IP a partir de un dominio (como por ejemplo, [example.com](http://example.com/)). Este protocolo solo acepta strings de caracteres ASCII para los dominios, por lo cuál, para los dominios no ASCII (como [ñandú.com](http://ñandú.com/)) el string del dominio se tiene que codificar a ASCII.
-
-En el código, la obtención de la dirección ip se hace llamando a la función `socket.gethostbyname`. Está función aplica la codificación automáticamente, por lo que no es necesario hacer nada especial para que funcionen los dominios no ASCII.
+Muchos protocolos de bajo nivel solo soportan ASCII, esto limita también lo que puedan hacer las aplicaciones de red que emplean dichos protocolos. Para resolver este problema se creó el mecanismo **IDNA** (Internationalizing Domain Names in Applications) el cual define una manera de interpretar caracteres no-ASCII para que las aplicaciones de red puedan interactuar con las capas inferiores y quizás tambien permitir al usuario interactuar con su encoding favorito.
+Los navegadores mas modernos utilizan **IDNA** para decodificar dominios en unicode, permitiendonos entrar a links que no esten codificados en ASCII.
 
 ### Referencias
 
 https://nedbatchelder.com/text/unipain.html
 
-[Nombre de dominio internacionalizado - Wikipedia, la enciclopedia libre](https://es.wikipedia.org/wiki/Nombre_de_dominio_internacionalizado)
+https://en.wikipedia.org/wiki/Domain_Name_System
+
+https://en.wikipedia.org/wiki/Internationalized_domain_name
 
 ---
 
